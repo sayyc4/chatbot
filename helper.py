@@ -19,12 +19,12 @@ def build_ideas_prompt(topic: str) -> str:
     """Build the prompt string for the chat model.
 
     This prompt follows the same structure as the original Colab notebook:
-    - Ask for 3 ideas.
+    - Ask for ideas.
     - Force the format "1. Title: Description...".
     - Use exactly one blank line between ideas.
     """
     message = f"""
-Give me a list of 3 ideas for the future of {topic} in the context of convention centers.
+Give me a list of 1 ideas for the future of {topic} in the context of convention centers.
 Each idea must be formatted as:
 <number>. <Title>: <Description>
 
@@ -155,7 +155,7 @@ def generate_intro_audio(topic: str) -> bytes:
         return None
 
 
-def generate_ideas_with_media(topic: str, num_ideas: int = 3) -> List[Dict[str, object]]:
+def generate_ideas_with_media(topic: str, num_ideas: int = 1) -> List[Dict[str, object]]:
     """High-level pipeline that returns ideas with images and audio.
 
     This function:
