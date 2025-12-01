@@ -155,7 +155,7 @@ def generate_intro_audio(topic: str) -> bytes:
         return None
 
 
-def generate_ideas_with_media(topic: str, num_ideas: int = 1) -> List[Dict[str, object]]:
+def generate_ideas_with_media(topic: str, num_ideas: int = 3) -> List[Dict[str, object]]:
     """High-level pipeline that returns ideas with images and audio.
 
     This function:
