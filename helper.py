@@ -20,11 +20,11 @@ def build_ideas_prompt(topic: str) -> str:
 
     This prompt follows the same structure as the original Colab notebook:
     - Ask for 3 ideas.
-    - Force the format "1. Title: Description".
+    - Force the format "1. Title: Description...".
     - Use exactly one blank line between ideas.
     """
     message = f"""
-Give me a list of 5 ideas for the future of {topic} in the context of convention centers.
+Give me a list of 3 ideas for the future of {topic} in the context of convention centers.
 Each idea must be formatted as:
 <number>. <Title>: <Description>
 
